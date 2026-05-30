@@ -27,10 +27,10 @@ Example after downloading from Hugging Face:
 
 ```bash
 mkdir -p data
-huggingface-cli download Green-Hand103/RoboStressBench-Dataset --repo-type dataset --local-dir data/RoboStressBench-Dataset
+huggingface-cli download RoboStressBench/RoboStressBench-Dataset --repo-type dataset --local-dir data/RoboStressBench-Dataset
 ```
 
-Dataset page: [Green-Hand103/RoboStressBench-Dataset](https://huggingface.co/datasets/Green-Hand103/RoboStressBench-Dataset)
+Dataset page: [RoboStressBench/RoboStressBench-Dataset](https://huggingface.co/datasets/RoboStressBench/RoboStressBench-Dataset)
 
 The evaluation code reads `manifest.jsonl` and per-sample `records/*.json`. The optional `metadata.jsonl` file is provided for easier dataset browsing and external scripts.
 
