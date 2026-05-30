@@ -1,0 +1,12 @@
+# Default environment for RoboStressBench API evaluation and mainstream local VLM checkpoints.
+# For CUDA-enabled PyTorch, install the wheel matching your CUDA version first if needed:
+#   https://pytorch.org/get-started/locally/
+torch
+transformers
+accelerate
+Pillow
+PyYAML
+sentencepiece
+safetensors
+einops
+numpy

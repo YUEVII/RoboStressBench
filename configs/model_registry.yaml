@@ -1,0 +1,135 @@
+model_registry:
+  # Local model entries. Replace ckpt_path with your local checkpoint directories.
+  # Release defaults use batch_size: 1 for stability. Increase after smoke tests pass.
+  Qwen3-VL-4B-Instruct:
+    mode: "local"
+    family: "qwen3_vl"
+    ckpt_path: "checkpoints/Qwen3-VL-4B-Instruct"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3-VL-8B-Instruct:
+    mode: "local"
+    family: "qwen3_vl"
+    ckpt_path: "checkpoints/Qwen3-VL-8B-Instruct"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3-VL-30B-A3B-Instruct:
+    mode: "local"
+    family: "qwen3_vl"
+    ckpt_path: "checkpoints/Qwen3-VL-30B-A3B-Instruct"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.5-4B:
+    mode: "local"
+    family: "qwen3_5"
+    ckpt_path: "checkpoints/Qwen3.5-4B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.5-9B:
+    mode: "local"
+    family: "qwen3_5"
+    ckpt_path: "checkpoints/Qwen3.5-9B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.5-27B:
+    mode: "local"
+    family: "qwen3_5"
+    ckpt_path: "checkpoints/Qwen3.5-27B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.5-35B-A3B:
+    mode: "local"
+    family: "qwen3_5"
+    ckpt_path: "checkpoints/Qwen3.5-35B-A3B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.6-27B:
+    mode: "local"
+    family: "qwen3_6"
+    ckpt_path: "checkpoints/Qwen3.6-27B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  Qwen3.6-35B-A3B:
+    mode: "local"
+    family: "qwen3_6"
+    ckpt_path: "checkpoints/Qwen3.6-35B-A3B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    batch_size: 1
+
+  InternVL3_5-4B-HF:
+    mode: "local"
+    family: "internvl"
+    ckpt_path: "checkpoints/InternVL3_5-4B-HF"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    trust_remote_code: true
+    batch_size: 1
+
+  InternVL3_5-8B-HF:
+    mode: "local"
+    family: "internvl"
+    ckpt_path: "checkpoints/InternVL3_5-8B-HF"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    trust_remote_code: true
+    batch_size: 1
+
+  InternVL3_5-14B-HF:
+    mode: "local"
+    family: "internvl"
+    ckpt_path: "checkpoints/InternVL3_5-14B-HF"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    trust_remote_code: true
+    batch_size: 1
+
+  # Molmo should be evaluated in a separate environment; see docs/environments.md.
+  Molmo2-4B:
+    mode: "local"
+    family: "molmo2"
+    ckpt_path: "checkpoints/Molmo2-4B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    trust_remote_code: true
+    batch_size: 1
+
+  Molmo2-8B:
+    mode: "local"
+    family: "molmo2"
+    ckpt_path: "checkpoints/Molmo2-8B"
+    torch_dtype: "bfloat16"
+    device_map: "auto"
+    trust_remote_code: true
+    batch_size: 1
+
+  # API model entries. Set OPENAI_API_KEY and/or GEMINI_API_KEY before running.
+  gpt-5.5:
+    mode: "api"
+    provider: "openai"
+    api_model_name: "gpt-5.5"
+    api_url: "https://api.openai.com/v1/responses"
+    api_key_env_var: "OPENAI_API_KEY"
+
+  gemini-3.1-flash-lite-preview:
+    mode: "api"
+    provider: "gemini"
+    api_model_name: "gemini-3.1-flash-lite-preview"
+    api_url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent"
+    api_key_env_var: "GEMINI_API_KEY"

@@ -1,0 +1,22 @@
+run_settings:
+  dataset_root: "data/RoboStressBench-Dataset"
+  manifest_path: "manifest.jsonl"
+  datasets_to_run: "all"
+  gt_types_to_run: "all"
+  output_dir: "outputs/local_smoke"
+  models_to_run:
+    - "Qwen3-VL-4B-Instruct"
+  exclude_molmo2_family: true
+  max_concurrent_API_requests: 8
+  max_new_tokens: 64
+  temperature: 0.0
+  top_p: 1.0
+  run_limit: 9
+  stratified_balanced_sample: true
+  sample_seed: 42
+  max_workers: 1
+
+cache_dir: "cache"
+use_family_cache_for_internvl: true
+use_family_cache_for_molmo2: true
+model_registry_path: "model_registry.yaml"

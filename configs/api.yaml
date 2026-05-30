@@ -1,0 +1,24 @@
+run_settings:
+  # Set this to your downloaded RoboStressBench-Dataset directory.
+  dataset_root: "data/RoboStressBench-Dataset"
+  manifest_path: "manifest.jsonl"
+  datasets_to_run: "all"
+  gt_types_to_run: "all"
+  output_dir: "outputs/api"
+  models_to_run:
+    - "gpt-5.5"
+    - "gemini-3.1-flash-lite-preview"
+  exclude_molmo2_family: false
+  max_concurrent_API_requests: 8
+  max_new_tokens: 64
+  temperature: 0.0
+  top_p: 1.0
+  run_limit: null
+  stratified_balanced_sample: false
+  sample_seed: 42
+  max_workers: 1
+
+cache_dir: "cache"
+use_family_cache_for_internvl: true
+use_family_cache_for_molmo2: true
+model_registry_path: "model_registry.yaml"

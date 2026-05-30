@@ -1,0 +1,11 @@
+# Molmo-specific environment. Use a separate Python/conda environment from requirements.txt.
+torch
+transformers==4.57.1
+accelerate
+Pillow
+PyYAML
+sentencepiece
+safetensors
+einops
+numpy
+molmo_utils
