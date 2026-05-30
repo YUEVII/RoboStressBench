@@ -1,6 +1,22 @@
-# RoboStressBench
+<h1 align="center">
+RoboStressBench: Benchmarking VLM Robustness to
+Physical Visual Stress in Embodied Scenes
+</h1>
 
-RoboStressBench is an evaluation framework for vision-language models under robotics-oriented visual stress conditions. The runner supports multiple-choice QA, target grounding with bounding boxes, and placement grounding with point-in-mask evaluation.
+<p align="center">
+Leyi Wu<sup>1,3,*</sup>, Yifan Zhao<sup>1,*</sup>, Jinjie
+Zhang<sup>1,*</sup>, Suzeyu Chen<sup>1,3,*</sup>, Wosong Chen<sup>1,3</sup>, Zhifei Chen<sup>1</sup>, Tianshuo Xu<sup>1</sup>, Qingchun He<sup>1</sup>, Hongxin Hu<sup>1</sup>, Haojian Huang<sup>1,3</sup>, Yangkai Wei<sup>3</sup>, Wenqian Li<sup>3</sup>, Yinchuan Li<sup>3</sup>, Ying-Cong
+Chen<sup>1,2,†</sup>
+</p>
+
+<p align="center">
+<sup>1</sup>HKUST(GZ), <sup>2</sup>HKUST, <sup>3</sup>Knowin
+</p>
+
+<p align="center">
+Paper: Coming soon &nbsp;|&nbsp; Project Page:
+<a href="https://yuevii.github.io/robostressbench-page/">RoboStressBench Page</a>
+</p>
 
 ## Repository Contents
 
