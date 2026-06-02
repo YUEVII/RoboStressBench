@@ -34,7 +34,7 @@ requirements-molmo.txt  # Molmo-only environment, use separately
 docs/                   # dataset and evaluation notes
 ```
 
-Generated outputs are written under `outputs/` by default and are ignored by git.
+Generated outputs are written under `outputs/` by default.
 
 ## Dataset
 
