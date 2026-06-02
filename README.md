@@ -18,6 +18,8 @@ Chen<sup>1,2,†</sup>
 &nbsp;&nbsp;&nbsp;
 <a href="https://yuevii.github.io/robostressbench-page/">Project Page</a>
 &nbsp;&nbsp;&nbsp;
+<a href="https://huggingface.co/datasets/RoboStressBench/RoboStressBench-Dataset">Dataset</a>
+&nbsp;&nbsp;&nbsp;
 <a href="https://yuevii.github.io/robostressbench-page/join">Join Evaluation</a>
 </p>
 
@@ -48,8 +50,6 @@ Example after downloading from Hugging Face:
 mkdir -p data
 huggingface-cli download RoboStressBench/RoboStressBench-Dataset --repo-type dataset --local-dir data/RoboStressBench-Dataset
 ```
-
-Dataset page: [RoboStressBench/RoboStressBench-Dataset](https://huggingface.co/datasets/RoboStressBench/RoboStressBench-Dataset)
 
 The evaluation code reads `manifest.jsonl` and per-sample `records/*.json`. The optional `metadata.jsonl` file is provided for easier dataset browsing and external scripts.
 
