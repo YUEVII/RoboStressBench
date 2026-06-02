@@ -14,8 +14,11 @@ Chen<sup>1,2,†</sup>
 </p>
 
 <p align="center">
-Paper: Coming soon &nbsp;|&nbsp; Project Page:
-<a href="https://yuevii.github.io/robostressbench-page/">RoboStressBench Page</a>
+<a href="https://arxiv.org/abs/2606.00828">Paper</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://yuevii.github.io/robostressbench-page/">Project Page</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://yuevii.github.io/robostressbench-page/join">Join Evaluation</a>
 </p>
 
 ## Repository Contents
@@ -105,6 +108,10 @@ python run.py --config configs/molmo.yaml --gpu-ids 0,1,2,3
 
 See `docs/evaluation.md` for smoke-test commands and output details.
 
+## Submitting Results
+
+If you would like to share your evaluation results, please format them according to the instructions on the [Join Evaluation](https://yuevii.github.io/robostressbench-page/join) page and submit them there. The public website will be updated every two weeks.
+
 ## Notes
 
 - Bounding-box ground truth uses `xyxy` coordinates in permille space `[0, 1000]`.
@@ -113,14 +120,15 @@ See `docs/evaluation.md` for smoke-test commands and output details.
 
 ## Citation
 
-BibTeX entry coming soon. We will update this section once the citation is finalized.
-
 ```bibtex
-@misc{robostressbench2026,
-  title  = {TBD},
-  author = {TBD},
-  year   = {2026},
-  note   = {BibTeX placeholder -- to be updated}
+@misc{wu2026robostressbenchbenchmarkingvlmrobustness,
+      title={RoboStressBench: Benchmarking VLM Robustness to Physical Visual Stress in Embodied Scenes}, 
+      author={Leyi Wu and Yifan Zhao and Jinjie Zhang and Suzeyu Chen and Wosong Chen and Zhifei Chen and Tianshuo Xu and Qingchun He and Hongxin Hu and Haojian Huang and Yangkai Wei and Wenqian Li and Yinchuan Li and Ying-Cong Chen},
+      year={2026},
+      eprint={2606.00828},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.00828}, 
 }
 ```
 
